@@ -188,6 +188,10 @@ p{
     background: #00bcd4;;
     animation: react 1s linear forwards;
 }
+.Nodejs{
+    background: #00bcd4;;
+    animation: Nodejs 1s linear forwards;
+}
 .html span{
     border: 3px solid #00bcd4;
 }
@@ -198,6 +202,9 @@ p{
     border: 3px solid #00bcd4;
 }
 .react span{
+    border: 3px solid #00bcd4;
+}
+.Nodejs span{
     border: 3px solid #00bcd4;
 }
 @keyframes html{
@@ -218,6 +225,11 @@ p{
 @keyframes react{
     100%{
         width: 25%;
+    }
+}
+@keyframes Nodejs{
+    100%{
+        width: 10%;
     }
 }
 /*social*/
