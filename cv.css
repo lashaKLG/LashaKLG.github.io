@@ -1,0 +1,312 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+}
+p{
+    font-family: 'Oswald', sans-serif; 
+    font-size: large;
+    box-shadow: 0px 0px 40px #797777;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    
+}
+.navcontainer{
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    height: 20vh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0px auto;
+}
+
+.nav-link > ul {
+    display: flex;
+    justify-content: space-around;
+    width: 750px;
+    list-style: none;    
+}
+.nav-link > ul > li > a:hover{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+ .nav-link > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    position: relative;
+} 
+ .nav-link > ul > li > a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px; 
+} 
+.nav-link > ul > li > a::after {
+    content: "";
+    position: absolute;
+    top: 27px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: aqua;
+    transition: all ease 0.5s;
+}
+.nav-link > ul > li > a:hover::after {
+    width: 100%;
+}
+/* header*/
+.header-container .img-container{
+    text-align: center;
+    margin-top: 30px;   
+}
+.header-container .img-container > img {
+    border-radius: 50%;
+    height: 25em;
+    object-fit: cover;
+    width: 25em;
+    border: 10px solid rgb(255, 253, 253); 
+    box-shadow: 0px 0px 40px #797777; 
+    transition-duration: 1s;  
+}
+.header-container .img-container > img:hover{
+  border-color: aqua;
+  box-shadow: 0px 0px 15px #797777;
+  animation: 1s linear infinite; 
+}
+.letme{
+    filter: drop-shadow(2px 3px 1px aqua);
+}
+.header-container .about-text{
+    text-align: center;
+    margin-top: 20px;   
+} 
+.header-container .about-text> h1{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-transform: uppercase;
+}  
+.header-container .about-text> p{
+    width: 750px;
+    text-align: start;
+    margin: 0px auto;
+}
+.hello{
+    color: aqua;
+    filter: drop-shadow(1px 2px 1px black);
+}
+.twitch{
+    color: aqua;
+    filter: drop-shadow(1px 2px 1px black); 
+}
+.matrix{
+    color: aqua;
+    filter: drop-shadow(1px 2px 1px black);
+}
+.full{
+    color: aqua;
+    filter: drop-shadow(1px 2px 1px black); 
+}
+.name{
+    color: aqua;
+    filter: drop-shadow(1px 2px 1px black);  
+}
+/*skills*/
+.skills{
+    height: 350px;
+    display: flex;
+    align-items: flex-start; 
+    justify-content: stretch; 
+    flex-direction: column;
+    margin: 40px auto;
+    padding-left: 100px;
+    width: 750px;
+    border-radius: 15px;
+}
+.skills h2{
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #222;
+    font-size: 15px;
+    font-family: 'Oswald', sans-serif;   
+}
+.skills h2:hover{
+   color:aqua;
+   transition-duration: 1s;
+   cursor: pointer;
+}
+.progress-bar{
+   background: #959595;
+   width: 600px;
+   height: 10px;
+   border-radius: 5px; 
+   box-shadow: 0px 0px 15px #797777;
+   cursor: pointer;
+}
+.progress-bar :hover{
+    background-color: blueviolet;
+    box-shadow: 0px 0px 15px #797777;
+    transition-duration: 1s;   
+}
+.progress-bar div{
+    height: 10px;
+    border-radius:5px;
+    width: 0%;
+}
+.progress-bar div span{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #222;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html{
+    background: #00bcd4;
+    animation: html 1s linear forwards;   
+}
+.css{
+    background: #00bcd4;;
+    animation: css 1s linear forwards;
+}
+.javascript{
+    background: #00bcd4;
+    animation: javascript 1s linear forwards;
+}
+.react{
+    background: #00bcd4;;
+    animation: react 1s linear forwards;
+}
+.html span{
+    border: 3px solid #00bcd4;
+}
+.css span{
+    border: 3px solid #00bcd4;
+}
+.javascript span{
+    border: 3px solid #00bcd4;
+}
+.react span{
+    border: 3px solid #00bcd4;
+}
+@keyframes html{
+    100%{
+        width: 87%;
+    }
+}
+@keyframes css{
+    100%{
+        width: 75%;
+    }
+}
+@keyframes javascript{
+    100%{
+        width: 40%;
+    }
+}
+@keyframes react{
+    100%{
+        width: 25%;
+    }
+}
+/*social*/
+.social{     
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: 47px auto;
+    width: 750px; 
+    height: 160px; 
+}
+.social > a > img{
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 12px;
+}
+.social > a > img:hover{
+    box-shadow: 0 0 40px aqua;
+    border-radius: 50%;
+    transition: all 1s;
+}
+/*contacts*/
+.contacts{
+    background-color:#ffffff;
+    height: 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 10px auto;
+    width: 810px; 
+    box-shadow: 0px 0px 40px #797777;
+    border-radius: 15px;  
+}
+.conection{
+    justify-content: space-between;
+    height: 140px;  
+    padding: 15px 20px 15px 20px;   
+}
+#name{
+    border-radius: 8px;
+}
+#emailField{
+    border-radius: 8px;
+}
+#textarea{
+    border-radius: 8px;
+    height: 92px;
+    width: 326px;
+    border: 2px solid black;
+}
+#Submith{
+    border-radius: 8px;
+    width: 240px;
+    height: 20px;
+}
+#Submith:hover{
+    background-color: aqua;
+    transition: 1s;
+    cursor: pointer;
+}
+.adress{
+    padding: 10px 10px 10px 80px;
+    width: 750px;
+    font-family: 'Oswald', sans-serif;
+}
+.adress:hover{
+    filter: drop-shadow(2px 3px 1px aqua);
+    transition:  0.5s;
+    cursor: pointer;
+}
+/*projects*/
+.projects{
+    background-color:yellow;
+    height: 200px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin: 10px auto;
+    width: 750px; 
+}
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 100px;
+}
+footer h2{
+    filter: drop-shadow(2px 3px 1px aqua);
+    font-family: 'Oswald', sans-serif; 
+}
